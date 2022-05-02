@@ -36,11 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
 .links:hover{
   color: black;
   font-weight: bold;
-}
-
-div{
-
 }

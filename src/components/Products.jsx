@@ -41,7 +41,7 @@ export const Products = () => {
       </Select>
       <Grid data-testid="products-container">
         {data.map((e) => (
-         <ProductCard id ={e.id}  title={e.title} brand = {e.brand} price = {e.price} category={e.category} image = {e.image}/>
+         <ProductCard id ={e.id}  title={e.title} price = {e.price} category={e.category} image = {e.image}/>
         ))}
       </Grid>
     </>

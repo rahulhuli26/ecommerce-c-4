@@ -1,3 +1,6 @@
+import {GET_PRODUCTS_DATA, SORT_PRODUCTS_ASC, SORT_PRODUCTS_DSC, FILTER_PRODUCTS_MEN, FILTER_PRODUCTS_WOMEN, FILTER_PRODUCTS_KIDS, FILTER_PRODUCTS_HOMEDECORS} from "./actions";
+
+
 const initState = {
   data: [],
   isLoading: false,
@@ -7,7 +10,6 @@ const initState = {
 };
 
 
-import{GET_PRODUCTS_DATA, SORT_PRODUCTS_ASC, SORT_PRODUCTS_DSC, FILTER_PRODUCTS_MEN, FILTER_PRODUCTS_WOMEN, FILTER_PRODUCTS_KIDS, FILTER_PRODUCTS_HOMEDECORS} from "./actions";
 
 
 export const reducer = (store = initState, { type, payload }) => {
