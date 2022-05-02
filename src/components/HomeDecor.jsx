@@ -8,9 +8,18 @@ import React, { useEffect } from "react";
 export const HomeDecor = () => {
     const dispatch = useDispatch();
     const {filterData} = useSelector((store) => (store));
+    const {data} = useSelector((store) => (store));
+
+    const getData = () => {
+      fetch(`https://movie-fake-server.herokuapp.com/products`)
+      .then((res) => (res.json()))
+      .then((data) => {dispatch(getProductsData(data))});
+    }
 
     useEffect(() => {
+      getData();
       dispatch(filterHomeDecor());
+      console.log(data);
     },  [])
 
     return (
